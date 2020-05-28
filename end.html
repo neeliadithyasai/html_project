@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Quick Quiz</title>
+        <meta name="description" content="website for Quiz.">
+        <title>Congrats!</title>
+        <link rel="stylesheet" href="css/main.css"/>
+
+    </head>
+
+    <body>
+
+        <div id="container">
+            <div id="end" class="flex-center flex-column">
+                <h1 id="finalScore">0</h1>
+                <form>
+                   <input 
+                    type = "text"
+                    name = "username"
+                    id = "username"
+                    placeholder="username"
+                    />
+                    <button type = "submit" 
+                    class="btn" 
+                    id="saveScoreBtn" 
+                    onclick="saveHighScore(event)"
+                    disabled>Save</button>
+                    <a class="btn" href="file:///Users/adithyasaineeli/Desktop/html_project/topics.html">Play Again</a>
+                    <a class="btn" href="file:///Users/adithyasaineeli/Desktop/html_project/home.html">Go Home</a>
+                </form>
+               
+            </div>
+        </div>
+
+        <script src="Javascript/end.js">
+        
+        </script>
+
+    </body>
+
+    </html>

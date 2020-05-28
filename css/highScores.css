@@ -1,0 +1,109 @@
+html {
+    background:  #1d1e22;
+    background-image: #1d1e22;
+    -webkit-font-smoothing: antialiased;
+    backdrop-filter: blur(5px);
+    
+}
+body {
+    background:#feda6a;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #000000;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 1px auto;
+    max-width: 800px;
+    padding: 2em 2em 4em;
+     border-style: solid;
+     border-radius: 2em 2em;
+
+     backdrop-filter: blur(5px);
+     margin-top: 100px;
+     
+}
+* UTILITIES */
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container > * {
+  width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+#highScoresList {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 4rem;
+   
+  }
+  
+  .high-score {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    border: solid;
+    border-radius: 2em 2em;
+  }
+  
+  .high-score:hover {
+    transform: scale(1.025);
+  }
+
+  /* BUTTONS */
+.btn {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid white;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 2em 2em;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+  }
+  
+  .btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+  }
+ 
+  
+ 

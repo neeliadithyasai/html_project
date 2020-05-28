@@ -13,17 +13,26 @@
 
         <header>
 
-        <h1> Welcome to Brain Strom 2020!</h1>
+        <h1 id="mainhead"> Welcome to Brain Strom 2020!</h1>
 
         </header>
 
-        <p> Hi there please select the topic below to challenge your brain!</p>
-
+        <div class="container1">
+            <form method="GET" class="user-form" action="topics.html">
+                <label for="fullname">Full Name</label>
+                <input type="text" name="fullname" placeholder="Enter Full Name" id = "full-name" class = "user-name" required>
+                <label for="age">Age</label>
+                <input type="text" name="age" placeholder="Enter Age" id = "age" class="user-age" required>
+                 <button id="user-submit">Start</button>
+            </form>
+        </div>
+    <script src="Javascript/indexPage.js"></script>
+    
 
 
 
         <footer>
-           &copy; Copy Rights 2020 , All Rights reserved.<br>
+                 &copy; Copy Rights 2020 , All Rights reserved.<br>
         </footer>
     </body>
    
