@@ -21,30 +21,30 @@
 
 
             <div class="container">
-            <img alt="Coding" src="images/computers.jpg" width="200" height="200" class="image">
+            <img alt="Coding" id="com"  src="images/computers.jpg" width="200" height="200" class="image">
             <div class="overlay">
-                <div class="text"><a href="file:///Users/adithyasaineeli/Desktop/html_project/computers.html">Computers</a></div>
+                <div class="text"><a onclick="newwin()" href='quiz.html'>Computers</a></div>
             </div>
             </div>
 
             <div class="container">
                 <img alt="Coding" src="images/sports.jpg" width="200" height="200" class="image">
                 <div class="overlay">
-                    <div class="text"><a href="file:///Users/adithyasaineeli/Desktop/html_project/Sports.html">Sports</a></div>
+                    <div class="text"><a onclick="newwin2()"  href='quiz.html'>Sports</a></div>
                 </div>
                 </div>
 
                 <div class="container">
                     <img alt="Coding" src="images/maths.png" width="200" height="200" class="image">
                     <div class="overlay">
-                        <div class="text"><a href="file:///Users/adithyasaineeli/Desktop/html_project/Maths.html">Maths</a></div>
+                        <div class="text"><a onclick="newwin3()" href='quiz.html'>Maths</a></div>
                     </div>
                     </div>
 
                     <div class="container">
                         <img alt="Coding" src="images/entertainment.jpg" width="200" height="200" class="image">
                         <div class="overlay">
-                            <div class="text"><a href="file:///Users/adithyasaineeli/Desktop/html_project/Entertainment.html">Entertainment</a></div>
+                            <div class="text"><a onclick="newwin4()" href='quiz.html'>Entertainment</a></div>
                         </div>
                         </div>
 
@@ -52,6 +52,32 @@
 
 
         </div>
+        <script>
+
+            function newwin(){
+                var x = "com";
+                 localStorage.setItem("topic", x);
+
+            }
+            function newwin2(){
+                var x = "sports";
+                 localStorage.setItem("topic", x);
+
+            }
+            function newwin3(){
+                var x = "maths";
+                 localStorage.setItem("topic", x);
+
+            }
+            function newwin4(){
+                var x = "ent";
+                 localStorage.setItem("topic", x);
+
+            }
+
+           
+
+        </script>
     
     
 

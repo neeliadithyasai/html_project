@@ -2,12 +2,14 @@ const username = document.getElementById("username");
 const saveScoreBtn = document.getElementById("saveScoreBtn");
 const finalScore = document.getElementById("finalScore");
 const mostRecentScore = localStorage.getItem("mostRecentScore");
+const names = localStorage.getItem("fname");
+
 
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
 const MAX_HIGH_SCORES = 5;
 
-finalScore.innerText = "Your Final score is:     "+mostRecentScore;
+finalScore.innerText = names +"Your Final score is:     "+mostRecentScore;
 
 username.addEventListener("keyup", () => {
   saveScoreBtn.disabled = !username.value;
@@ -29,5 +31,5 @@ saveHighScore = e => {
   localStorage.setItem("highScores", JSON.stringify(highScores));
 
   console.log(highScores);
-  window.location.assign("file:///Users/adithyasaineeli/Desktop/html_project/highscores.html");
+  window.location.assign('highscores.html');
 };
