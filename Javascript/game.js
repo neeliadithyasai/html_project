@@ -40,7 +40,7 @@ comgame();
 
 function comgame(){
 
-fetch("https://opentdb.com/api.php?amount=10&category=18")
+fetch("https://raw.githubusercontent.com/neeliadithyasai/html_project/master/Javascript/computers.json")
 .then(res => {
   return res.json();
 })
@@ -75,7 +75,7 @@ fetch("https://opentdb.com/api.php?amount=10&category=18")
 
 function sporgame(){
 
-  fetch("https://opentdb.com/api.php?amount=20&category=21")
+  fetch("https://raw.githubusercontent.com/neeliadithyasai/html_project/master/Javascript/sports.json")
   .then(res => {
     return res.json();
   })
@@ -110,7 +110,7 @@ function sporgame(){
 
   function entgame(){
 
-    fetch("https://opentdb.com/api.php?amount=20&category=11")
+    fetch("https://raw.githubusercontent.com/neeliadithyasai/html_project/master/Javascript/entertainment.json")
     .then(res => {
       return res.json();
     })
@@ -146,7 +146,7 @@ function sporgame(){
     
     function mathgame(){
 
-      fetch("https://opentdb.com/api.php?amount=20&category=19")
+      fetch("https://raw.githubusercontent.com/neeliadithyasai/html_project/master/Javascript/maths.json")
       .then(res => {
         return res.json();
       })

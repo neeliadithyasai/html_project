@@ -126,7 +126,7 @@ body {
     font-size:1.8em;
     border: 0.1em solid rgb(86, 165, 235, 0.25);
     background-color: white;
-    max-width: 40em;
+    max-width: auto;
     border-radius: 2em 2em;
 }
 .choice-container:hover{
